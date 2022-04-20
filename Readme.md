@@ -1,5 +1,5 @@
-#SpaceShip Simulator
-##Objetivos del proyecto
+# SpaceShip Simulator
+## Objetivos del proyecto
 
 * La función de este proyecto es ejecutar un juego en el que se manejan naves espaciales.
 * La nave será representada mediante AsciiArt.
