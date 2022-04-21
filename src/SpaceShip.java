@@ -40,6 +40,23 @@ public class SpaceShip {
         }
     }
 
+    public void brake() {
+
+        if (ejeMovimiento == 0) {
+            velocidadX = velocidadX - aceleracion;
+            System.out.println("Acelerando en el eje X...");
+            System.out.println("La velocidad actual es: " + velocidadX + "km/h");
+
+        } else if (ejeMovimiento == 1) {
+            velocidadY = velocidadY - aceleracion;
+            System.out.println("Acelerando en el eje Y...");
+            System.out.println("La velocidad actual es: " + velocidadY + "km/h");
+
+        } else {
+            System.out.println("ERROR: Seleccione el eje X o el eje Y.");
+        }
+    }
+
     public String getNombre() {
         return nombre;
     }
