@@ -10,7 +10,6 @@ public class Cargo extends SpaceShip{
     }
 
     public void load() {
-        // Comprobación
         int contenedoresTrasCargar = cargaActual + contenedoresParaCargar;
 
         if (contenedoresTrasCargar <= cargaMaxima) {
@@ -22,6 +21,18 @@ public class Cargo extends SpaceShip{
 
         } else {
             System.out.println("ERROR: El valor introducido es demasiado grande.");
+        }
+    }
+
+    public void unload() {
+        int contenedoresRestantes = cargaActual - contenedoresParaCargar;
+
+        if (contenedoresRestantes >= 0) {
+            cargaActual -= contenedoresParaCargar;
+            System.out.println("Se han descargado " + contenedoresParaCargar + " contenedores de la nave, la carga actual es: " + cargaActual);
+
+        } else if (cargaActual == 0){
+            System.out.println("La nave no tiene contenedores en su interior.");
         }
     }
 
