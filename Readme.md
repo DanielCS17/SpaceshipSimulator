@@ -9,3 +9,6 @@
 
 ## Documentación de la clase SpaceShip
 > [enlace al fichero](https://github.com/DanielCS17/SpaceshipSimulator/blob/docs/docs/SpaceShip.md)
+
+## Documentación de la clase Cargo
+> [enlace al fichero](https://github.com/DanielCS17/SpaceshipSimulator/blob/docsCargo/docs/Cargo.md)
