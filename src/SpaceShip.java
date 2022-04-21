@@ -21,24 +21,23 @@ public class SpaceShip {
 
     public void speedUp() {
 
-        if (ejeMovimiento == 0){
+        if (ejeMovimiento == 0) {
             velocidadX = velocidadX + aceleracion;
             coordenadaX = coordenadaX + velocidadX;
             System.out.println("Acelerando en el eje X...");
             System.out.println("La velocidad actual es: " + velocidadX + "km/h");
             System.out.println("Las coordenadas actuales son: Y = " + coordenadaY + ", X = " + coordenadaX);
 
-        } else if (ejeMovimiento == 1){
+        } else if (ejeMovimiento == 1) {
             velocidadY = velocidadY + aceleracion;
             coordenadaY = coordenadaY + velocidadY;
             System.out.println("Acelerando en el eje Y...");
             System.out.println("La velocidad actual es: " + velocidadY + "km/h");
             System.out.println("Las coordenadas actuales son: X = " + coordenadaX + ", Y = " + coordenadaY);
 
-        }else {
+        } else {
             System.out.println("ERROR: Seleccione el eje X o el eje Y.");
         }
-
     }
 
     public String getNombre() {
@@ -119,5 +118,25 @@ public class SpaceShip {
 
     public void setEjeMovimiento(int ejeMovimiento) {
         this.ejeMovimiento = ejeMovimiento;
+    }
+
+    @Override
+    public String toString() {
+        return "                      ___----\\\n" +
+                "                     /_,/____.\\               ,...____...____*\n" +
+                "         __...--.'``;.;  ;.;  ;`;--..__     .'    ,-,     _.-´\n" +
+                "   _..-''-------'   `'   `'`  `'`       ``-''._  ( * )  ,'\n" +
+                "<'_________________            O  O  O  O  O  `-._`-` ,'\n" +
+                "  `._    O  O  O   ```````````------...___   '-.._'-:'\n" +
+                "     ```--.._      ;.;   <<<<<<<<<<<       ````--...__\\-.\n" +
+                "             `.--. `-` _______               ____    | = \\>` ` `  ) ) )\n" +
+                "               `. `.          ``````...'''_,'`````.  | = /> ` ` `  ) ) )\n" +
+                "                 `._`: D.C.S  __________   `. ESP  \\.__./  ` ` ` ) ) )\n" +
+                "                    `-*_____/______/___/____`.     \\  \n" +
+                "                                `.    \\        `.    \\\n" +
+                "                                  `.   `.___*    `.   `.___*\n" +
+                "                                    `------'` )))  `------'` )))";
+
+
     }
 }
