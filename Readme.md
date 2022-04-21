@@ -7,3 +7,5 @@
 * La nave podrá variar su velocidad, acelerando o frenando.
 * La nave contará con una capacidad de carga determinada.
 
+## Documentación de la clase SpaceShip
+> [enlace al fichero](https://github.com/DanielCS17/SpaceshipSimulator/blob/docs/docs/SpaceShip.md)
