@@ -6,3 +6,4 @@
 * El movimiento de la nave será controlado mediante ejes X e Y.
 * La nave podrá variar su velocidad, acelerando o frenando.
 * La nave contará con una capacidad de carga determinada.
+
