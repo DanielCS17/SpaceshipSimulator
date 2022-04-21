@@ -57,6 +57,16 @@ public class SpaceShip {
         }
     }
 
+    public void emergencyStop() {
+        System.out.println("ACTIVANDO FRENO DE EMERGENCIA...");
+        velocidadX = 0;
+        velocidadY = 0;
+        System.out.println("La nave se ha frenado correctamente");
+        System.out.println("Velocidad X: " + velocidadX + "km/h");
+        System.out.println("Velocidad Y: " + velocidadY + "km/h");
+        System.out.println("Coordenadas: X = " + coordenadaX + " , Y = " + coordenadaY);
+    }
+
     public String getNombre() {
         return nombre;
     }
